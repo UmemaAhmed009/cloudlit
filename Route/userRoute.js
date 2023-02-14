@@ -1,15 +1,15 @@
 const { request } = require('express');
-const e = require('express');
 const express = require('express');
-const user = require('../Models/user');
 const router = express.Router();
-const User = require('../Models/user');
 
+const User = require('../Models/user');
 
 router.post('/register', async(req,res,next)=>{
     const user = new User({
         email:req.body.email,
-        name:req.body.name})
+        name:req.body.name,
+        password:req.body.password
+})
     try{  
         const savedUser = await user.save()// save to database 
         console.log(savedUser)
