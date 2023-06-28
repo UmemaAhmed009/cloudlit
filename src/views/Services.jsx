@@ -81,7 +81,8 @@ const Services = () => {
                                 alt="AWS Icon"
                                 />
                             </div>
-                            <div className={styles.smallBox}
+                            <div className={styles.smallBox}>
+                                <img
                                 src={azureIcon}
                                 alt="Azure Icon"
                                 />
@@ -230,7 +231,8 @@ const Services = () => {
                         </div>{/* box-container */}
                     </div>{/* box-content */}
                 </div>{/* box */}
-            </div>
+            </div>{/* container */}
+{ /*Services */}</div> 
     );
 };
 

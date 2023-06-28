@@ -1,6 +1,6 @@
 .containerStyle {
   display: flex;
-  height: 800px;
+  height: 680px;
   max-width: 1600px;
   margin: 0 auto;
   flex-direction:row;
@@ -47,23 +47,23 @@
   margin-left: 0px;
   width: 150px;
 }
-.imgContainerStyle {
-  max-width: 70%;
-  height: 55%;
-  border-radius: 50%;
-  overflow: hidden;
-  margin-top: 110px;
-  margin-left: 70px;
-}
 .imageStyle {
   flex: 1;
   background-color: #e8f7e5;
   display: flex;
+  width: 100%;
   /* justify-content: center;  */
   /* align-items:center; */
 }
+.imgContainerStyle {
+  
+  height: 55%;
+  border-radius: 50%;
+  margin-top: 110px;
+  margin-left: 70px;
+}
 
-.circle-image-container {
+.circleImageContainer {
     width: 200px; /* Adjust the width and height as per your requirements */
     height: 200px;
     border-radius: 50%;
