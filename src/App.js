@@ -1,21 +1,20 @@
 import logo from './logo.svg';
 import './App.css';
-import Navbar from './Components/Navbar';
-import About from './Pages/About';
-import Contact from './Pages/Contact';
-import Home from './Pages/Home';
-import Skills from './Pages/Skiils';
-import Projects from './Pages/Projects';
-
+import Navbar from './components/Navbar';
+import Home from './views/Home';
+import Benefits from './views/Benefits';
+import Services from './views/Services';
+import Roadmap from './views/Roadmap';
+import Contact from './views/Contact';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
       <Home/>
-      <About />
-      <Skills />
-      <Projects/>
+      <Services />
+      <Benefits />
+      <Roadmap/>
       <Contact/>
     </div>
   );

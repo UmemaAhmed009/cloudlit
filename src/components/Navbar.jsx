@@ -19,17 +19,13 @@ import {
   CloseIcon,
   AddIcon,
 } from "@chakra-ui/icons";
-import Photo from "./Photo";
-import Name from "./Name";
-import "./Navbar.css";
-import Shubham_Verma_Resume from "./Shubham_Verma_Resume.pdf";
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const onButtonClick = () => {
-    window.open(Shubham_Verma_Resume);
+    window.open();
   };
 
   return (
@@ -39,15 +35,6 @@ export default function Navbar() {
         px={9}
         width={["100%"]}
       >
-        <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-          <HStack w="42%">
-            <Name />
-
-            <Show breakpoint="(min-width: 1000px)">
-              {" "}
-              <Photo />
-            </Show>
-          </HStack>
 
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
             {/* <IconButton
@@ -97,8 +84,6 @@ export default function Navbar() {
                 </Button>
               </HStack>
             </HStack>
-          </Flex>
-
           {/* {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={4}>
@@ -175,16 +160,9 @@ export default function Navbar() {
                 variant="solid"
                 onClick={onButtonClick}
                 size={["sm", "md"]}
-                download="Shubham_Verma_Resume"
                 id="resumeBtn"
               >
-                <a
-                  href={Shubham_Verma_Resume}
-                  target="_blank"
-                  download="Shubham_Verma_Resume"
-                >
-                  RESUME
-                </a>
+                  CONTACT US
                 {/* <Link
                     id="navRes"
                     href={Shubham_Verma_Resume}
