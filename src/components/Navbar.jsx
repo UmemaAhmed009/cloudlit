@@ -19,13 +19,16 @@ import {
   CloseIcon,
   AddIcon,
 } from "@chakra-ui/icons";
+import {Link, useNavigate} from 'react-router-dom';
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
   const { isOpen, onOpen, onClose } = useDisclosure();
 
+  const navigate = useNavigate();
   const onButtonClick = () => {
-    window.open();
+    navigate('/contact');
+    //window.open('/contact');
   };
 
   return (
@@ -59,21 +62,21 @@ export default function Navbar() {
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#About">
-                    <b>About</b>
+                  <a href="#Services">
+                    <b>Services</b>
                   </a>
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#Skills">
+                  <a href="#Benefits">
                     {" "}
-                    <b>Skills</b>
+                    <b>Benefits</b>
                   </a>
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#Projects">
-                    <b>Projects</b>
+                  <a href="#Roadmap">
+                    <b>Roadmap</b>
                   </a>
                 </Button>
 
@@ -158,11 +161,16 @@ export default function Navbar() {
                 _hover={{ bg: "#a891b7", color: "black" }}
                 color="white"
                 variant="solid"
+                
                 onClick={onButtonClick}
                 size={["sm", "md"]}
                 id="resumeBtn"
               >
-                  CONTACT US
+                {/* <Link to="/contact"> */}
+                CONTACT US
+                {/* </Link> */}
+                {/* <Link></Link> */}
+                  
                 {/* <Link
                     id="navRes"
                     href={Shubham_Verma_Resume}
@@ -247,7 +255,7 @@ export default function Navbar() {
                   }}
                 >
                   <a href="#About">
-                    <b>About</b>
+                    <b>Services</b>
                   </a>
                 </Button>
 
@@ -260,7 +268,7 @@ export default function Navbar() {
                 >
                   <a href="#Skills">
                     {" "}
-                    <b>Skills</b>
+                    <b>Benefits</b>
                   </a>
                 </Button>
 
@@ -272,7 +280,7 @@ export default function Navbar() {
                   }}
                 >
                   <a href="#Projects">
-                    <b>Projects</b>
+                    <b>Roadmap</b>
                   </a>
                 </Button>
 

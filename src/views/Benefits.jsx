@@ -1,5 +1,6 @@
 import * as React from "react";
 import styles from '../styles/Benefits.module.css'
+import styleTwo from '../styles/Services.module.css'
 import pic1 from '../assets/Quicker feature delivery.svg'
 import pic2 from '../assets/Reduced development time.png'
 import pic3 from '../assets/Hassle-free deployment.svg'
@@ -10,12 +11,13 @@ import pic7 from '../assets/Increased company performance.svg'
 
 const Benefits = () => {
   return (
+    <div id="Benefits">
     <main className={styles["benefits-container"]}>
     <div className ={styles.heading}>
         <h1>Benefits of DevOps Consulting Services</h1>
         <p>Our DevOps consulting team helps you bridge business gaps and develop optimum solutions.</p>
     </div>
-    <div className={styles.container}>
+    <div className={styleTwo.container}>
       <div className = {styles["image-content"]}>
         <div className={styles.image}>
             <img
@@ -95,6 +97,7 @@ const Benefits = () => {
         </div>
     </div>
     </main>
+    </div>
   );
 }
 

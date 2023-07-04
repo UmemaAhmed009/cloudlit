@@ -25,7 +25,7 @@ const theme = createTheme(); // Create an empty theme object
 
   return (
   <ThemeProvider theme={theme}>
-  <div>
+  <div id="Home">
     <div className={styles.containerStyle}>
     <div className={styles.contentStyle}>
       <h3 className={styles.headingOneStyle}>- Welcome to Our agency</h3>
