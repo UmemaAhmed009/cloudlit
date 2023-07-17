@@ -1,10 +1,10 @@
 .Services{
-    margin-top: 20px;
+    padding-top: 30px;
 }
 .content-container{
   justify-content: center;
   align-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 .headingOne{
   font-family: 'Times New Roman', Times, serif;

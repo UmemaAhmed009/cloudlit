@@ -5,9 +5,7 @@ import {
   useColorModeValue,
   Stack,
   useColorMode,
-  Show,
   HStack,
-  Text,
   useDisclosure,
   IconButton,
   Hide,
@@ -19,7 +17,9 @@ import {
   CloseIcon,
   AddIcon,
 } from "@chakra-ui/icons";
-import {Link, useNavigate} from 'react-router-dom';
+import { Link, useNavigate } from "react-router-dom";
+import "../styles/Navbar.css";
+import logo from "../assets/white1.png";
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -27,26 +27,25 @@ export default function Navbar() {
 
   const navigate = useNavigate();
   const onButtonClick = () => {
-    navigate('/contact');
+    navigate("/contact");
     //window.open('/contact');
   };
 
   return (
-    <div id="navFix">
+    <div className="navFix">
       <Box
         bg={useColorModeValue("gray.100", "gray.900")}
         px={9}
         width={["100%"]}
       >
-
+        <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
+          <div className="logo">
+            <img
+              src={logo} // Replace with the URL of your image
+            />
+          </div>
+          <HStack w="42%"></HStack>
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
-            {/* <IconButton
-              size={"md"}
-              icon={isOpen ? <CloseIcon /> : <HamburgerIcon />}
-              aria-label={"Open Menu"}
-              display={{ md: "none" }}
-              onClick={isOpen ? onClose : onOpen}
-            /> */}
             <HStack spacing={8} alignItems={"center"}>
               <HStack
                 as={"nav"}
@@ -62,7 +61,14 @@ export default function Navbar() {
                 </Button>
 
                 <Button className="btnRes">
-                  <a href="#Services">
+                  <a href="#About">
+                    {" "}
+                    <b>About</b>
+                  </a>
+                </Button>
+
+                <Button className="btnRes">
+                  <a href="#services">
                     <b>Services</b>
                   </a>
                 </Button>
@@ -80,13 +86,14 @@ export default function Navbar() {
                   </a>
                 </Button>
 
-                <Button className="btnRes">
+                {/* <Button className="btnRes">
                   <a href="#Contact">
                     <b>Contact</b>
                   </a>
-                </Button>
+                </Button> */}
               </HStack>
             </HStack>
+          </Flex>
           {/* {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={4}>
@@ -161,7 +168,6 @@ export default function Navbar() {
                 _hover={{ bg: "#a891b7", color: "black" }}
                 color="white"
                 variant="solid"
-                
                 onClick={onButtonClick}
                 size={["sm", "md"]}
                 id="resumeBtn"
@@ -170,7 +176,6 @@ export default function Navbar() {
                 CONTACT US
                 {/* </Link> */}
                 {/* <Link></Link> */}
-                  
                 {/* <Link
                     id="navRes"
                     href={Shubham_Verma_Resume}
@@ -193,42 +198,62 @@ export default function Navbar() {
           {isOpen ? (
             <Box pb={4} display={{ md: "none" }}>
               <Stack as={"nav"} spacing={4}>
-                <Button  onClick={isOpen ? onClose : onOpen}
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
-                  }}>
+                  }}
+                >
                   <a href="#Home">
                     {" "}
                     <b>Home</b>
                   </a>
                 </Button>
-                <Button  onClick={isOpen ? onClose : onOpen}
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
-                  }}>
+                  }}
+                >
                   <a href="#Home">
                     {" "}
                     <b>Home</b>
                   </a>
                 </Button>
 
-                <Button  onClick={isOpen ? onClose : onOpen}
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
-                  }}>
+                  }}
+                >
                   <a href="#Home">
                     {" "}
                     <b>Home</b>
                   </a>
                 </Button>
-                <Button  onClick={isOpen ? onClose : onOpen}
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
                     transform: "scale(1.2)",
-                  }}>
+                  }}
+                >
+                  <a href="#Home">
+                    {" "}
+                    <b>Home</b>
+                  </a>
+                </Button>
+                <Button
+                  onClick={isOpen ? onClose : onOpen}
+                  _hover={{
+                    textShadow: "#FC0 1px 0 10px",
+                    transform: "scale(1.2)",
+                  }}
+                >
                   <a href="#Home">
                     {" "}
                     <b>Home</b>
@@ -284,7 +309,7 @@ export default function Navbar() {
                   </a>
                 </Button>
 
-                <Button
+                {/* <Button
                   onClick={isOpen ? onClose : onOpen}
                   _hover={{
                     textShadow: "#FC0 1px 0 10px",
@@ -294,7 +319,7 @@ export default function Navbar() {
                   <a href="#Contact">
                     <b>Contact</b>
                   </a>
-                </Button>
+                </Button> */}
               </Stack>
             </Box>
           ) : null}

@@ -1,4 +1,5 @@
 .ChatForm{
+  padding-top: 50px;
   display: flex;
   height: 800px;
   max-width: 1600px;

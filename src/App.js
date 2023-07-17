@@ -1,4 +1,4 @@
-import { BrowserRouter, Switch, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes} from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Navbar from './components/Navbar';
@@ -8,22 +8,24 @@ import Roadmap from './views/Roadmap';
 import Contact from './views/Contact';
 import Home from './views/Home';
 import ChatForm from './views/ChatForm';
-import Router from './routes';
+import About from './views/About1';
+// import Router from './routes';
 
 function App() {
   return (
     <div className="App">
-        <Navbar />
-    <div className="content">
-        <Home />
-        <Services />
-        <Benefits />
-        <Roadmap />
-        <Contact />
-    </div>
-        <Router>
-          <Route path='/contact' component={ChatForm} />
-        </Router>
+      <Navbar />
+          <Routes>
+              <Route path="/contact" element={<ChatForm />} />
+              <Route path="/about" element={<About />} />
+              <Route path="*" element={[
+              <Home />,
+              <Services />,
+              <Benefits />,
+              <Roadmap />,
+              <Contact />]}>
+              </Route>
+          </Routes> 
     </div>
   );
 }

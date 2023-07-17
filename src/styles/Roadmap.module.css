@@ -1,7 +1,8 @@
 .roadmap-container{
-    margin-top: 100px;
+    padding-top: 120px;
     height: 650px;
-    background-color:#79BAEC; 
+    background-color:#F4F7FA; 
+    display: flex;
 }
 .content{
     display: flex;
@@ -9,7 +10,7 @@
     margin-top: 20px;
     margin-right: 100px;
     margin-left: 50px;
-    width: 100%;
+    width: 700px;
     text-align: left;
 } 
 .paragraph{
@@ -18,48 +19,97 @@
     width: 770px;
 }
 .content-h1{
-    /* width: 600px; */
-    /* margin */
     font-size: 30px;
-    
-
+        background-image: linear-gradient(to left, #3A92EE, #5146CA,#6015B2);
+        -webkit-background-clip: text;
+        -moz-background-clip: text;
+        background-clip: text;
+        color: transparent;
 }
 .coloured-content
 {
     color: orange;
     font-size: 30px;
     text-align: left;
-    /* margin-bottom:0; */
 }
 
 .box-container{
     display: flex;
-    margin: 50px;
-    /* flex-wrap: nowrap; 
-    flex-direction: row;
-   
-    /* justify-content: flex-end; */
-    
-    /* flex: 1; */
-    
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    flex: 0.9;
+    margin-top: 20px;
+    height: 350px;
+    /* display: flex;
+    margin: 50px; */
 }
 .box{
-    width: 350px;
-    height: 100px;
-    background-color: #003366;
-    border: 1px solid lightgrey;
-    display: flex;
+    width: 280px;
+    height: 150px;
+    background-color: white;
     margin-left: 20px;
-    /* align-self: center; */
+    padding: 8px;
+    display: flex;
+    align-items: left;
+    /* width: 350px;
+    height: 100px;
+    
+    border: 1px solid lightgrey;
+    /* display: flex; */
+    /* margin-left: 20px;
     margin-right: 20px;
     padding: 5px;
-    
-        /* width: calc(50% - 20px);
-        height: 100px;
-        background-color: lightgray;
-        margin: 10px; */
-
+    word-wrap: break-word; */ 
 }
-/* h1.content{
-    font-size: 50px;
-} */
+.box-content{
+    /* margin-left: 10px; */
+    text-align: left;
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.box-heading{
+  background-image: linear-gradient(to left, #3A92EE, #5146CA,#6015B2);
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.box-para{
+    color: black;
+    font-size: 13px;
+}
+.circle {
+    margin-top: 10px;
+    width: 100px;
+    height:50px;
+    border-radius: 50%;
+    background-color: whitesmoke; /* This is just for visualization */
+    background: linear-gradient(#3A92EE,aliceblue);
+  }
+  .icon1, .icon2, .icon3, .icon4{
+    margin-top:17px;
+    font-size: 18px; 
+  margin-left: 10px;
+    /* -webkit-background-clip: text;
+    background-clip: text; */
+    /* -webkit-text-fill-color: transparent; */
+    /* color: linear-gradient(orange,red); */
+    /* background: linear-gradient(orange,red);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text; */
+    /* color: transparent; */
+  }
+  .icon1{
+    color: #3A92EE;
+  }
+  .icon2{
+    color: #5146CA
+  }
+  .icon3{
+    color: #6015B2
+  }
+  .icon4{
+    color: blueviolet
+  }

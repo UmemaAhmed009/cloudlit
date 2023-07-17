@@ -6,13 +6,16 @@
       display: none;
     }
   }
- 
-  #navFix {
-  position: sticky;
-   top: 0;
-   z-index: 999;
-   width: 100%;
+  .navFix {
+    position: fixed;
+    overflow: hidden;
+    top: 0;
+    z-index: 20;
+    width: 100%;
   
+  }
+  .logo{
+    height:75px;
   }
   @media(min-width:801px){
     #hamburger{

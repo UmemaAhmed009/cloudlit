@@ -8,7 +8,7 @@ import gcp from '../assets/google-cloud-platform.png'
 const Services = () => {
   const isMobile = window.innerWidth <= 766; // Adjust the breakpoint as needed
   return (
-        <div id="Services">
+        <div id="services">
         <div className={styles.Services}>
             <div className ={styles["content-container"]}>
                 <h1 className ={styles["headingOne"]}>Tools and Technologies We Use</h1>

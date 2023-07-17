@@ -1,5 +1,7 @@
 .benefits-container{
-    margin-top: 20px;
+  margin-top: 20px;
+    padding-top: 100px;
+    height:620px;
 }
 .heading{
     justify-content: center;
