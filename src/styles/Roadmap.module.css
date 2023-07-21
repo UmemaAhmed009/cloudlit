@@ -3,6 +3,7 @@
     height: 650px;
     background-color:#F4F7FA; 
     display: flex;
+    font-family: "Open Sans",sans-serif;
 }
 .content{
     display: flex;
@@ -45,9 +46,10 @@
 }
 .box{
     width: 280px;
-    height: 150px;
+    height: 170px;
     background-color: white;
     margin-left: 20px;
+    margin-bottom: 10px;
     padding: 8px;
     display: flex;
     align-items: left;

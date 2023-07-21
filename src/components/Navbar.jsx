@@ -26,7 +26,28 @@ export default function Navbar() {
   const { isOpen, onOpen, onClose } = useDisclosure();
 
   const navigate = useNavigate();
-  const onButtonClick = () => {
+
+  const onHomeButtonClick = () => {
+    navigate("/home");
+    //window.open('/contact');
+  };
+  const onAboutButtonClick = () => {
+    navigate("/about");
+    //window.open('/contact');
+  };
+  const onServicesButtonClick = () => {
+    navigate("/services");
+    //window.open('/contact');
+  };
+  const onBenefitsButtonClick = () => {
+    navigate("/benefits");
+    //window.open('/contact');
+  };
+  const onRoadmapButtonClick = () => {
+    navigate("/roadmap");
+    //window.open('/contact');
+  };
+  const onContactButtonClick = () => {
     navigate("/contact");
     //window.open('/contact');
   };
@@ -34,7 +55,8 @@ export default function Navbar() {
   return (
     <div className="navFix">
       <Box
-        bg={useColorModeValue("gray.100", "gray.900")}
+        bg="white
+        "
         px={9}
         width={["100%"]}
       >
@@ -53,37 +75,35 @@ export default function Navbar() {
                 display={{ base: "none", md: "flex" }}
                 id="myDIV"
               >
-                <Button className="btnRes">
-                  <a href="#Home">
-                    {" "}
+                <Button
+                  className="btnRes"
+                  style={{ backgroundColor: "white" }}
+                  onClick={onHomeButtonClick}
+                >
                     <b>Home</b>
-                  </a>
                 </Button>
 
-                <Button className="btnRes">
-                  <a href="#About">
-                    {" "}
-                    <b>About</b>
-                  </a>
+                <Button
+                  className="btnRes"
+                  style={{ backgroundColor: "white" }}
+                  onClick={onAboutButtonClick}
+                >
+                  <b>About</b>
                 </Button>
 
-                <Button className="btnRes">
-                  <a href="#services">
+                <Button className="btnRes" style={{ backgroundColor: "white" }}
+                 onClick={onServicesButtonClick}>
                     <b>Services</b>
-                  </a>
                 </Button>
 
-                <Button className="btnRes">
-                  <a href="#Benefits">
-                    {" "}
+                <Button className="btnRes" style={{ backgroundColor: "white" }}
+                onClick={onBenefitsButtonClick}>
                     <b>Benefits</b>
-                  </a>
                 </Button>
 
-                <Button className="btnRes">
-                  <a href="#Roadmap">
+                <Button className="btnRes" style={{ backgroundColor: "white" }}
+                onClick={onRoadmapButtonClick}>
                     <b>Roadmap</b>
-                  </a>
                 </Button>
 
                 {/* <Button className="btnRes">
@@ -159,16 +179,19 @@ export default function Navbar() {
 
           <Flex alignItems={"center"}>
             <Stack direction={"row"} spacing={7}>
-              <Button onClick={toggleColorMode}>
+              {/* <Button onClick={toggleColorMode}>
                 {colorMode === "light" ? <MoonIcon /> : <SunIcon />}
-              </Button>
+              </Button> */}
 
               <Button
-                backgroundColor="#a891b7"
-                _hover={{ bg: "#a891b7", color: "black" }}
+                background="linear-gradient(to right, #5146CA, #6015B2)"
+                _hover={{
+                  bg: "linear-gradient(to right,blue, blueviolet)",
+                  color: "white",
+                }}
                 color="white"
                 variant="solid"
-                onClick={onButtonClick}
+                onClick={onContactButtonClick}
                 size={["sm", "md"]}
                 id="resumeBtn"
               >

@@ -1,27 +1,20 @@
 .Contact{
-    margin-top: 30px;
     padding-top:30px;
-    height: 750px;
-    background-color: #291E29;
+    height: 450px;
+    background-color: #222323;
     display: flex;
+    font-family: "Open Sans",sans-serif;
 }
 .container{
-    /* border: 1px solid white; */
-    width: 900px;
-    height: 10px;
-    margin-top: 500px;
-    margin-left: 0px;
+    border-bottom:white 1px solid;
+    height: 350px;
+    width: 1200px;
+    margin: 20px 150px;
+    padding: 20px;
+    display: flex; 
 }
-.horizontalLine {
-    border: 1px solid #ccc;
-    /* border-top: 1px solid white; */
-    /* font-size: 300px; */
-    /* margin-left: 100px; */
-  }
 .pages{
-    /* margin:100px; */
-    /* border:white 1px solid; */
-    margin: 100px 100px 0px;
+    margin: 30px 10px;
     height:250px;
     width: 250px;
     text-align: left;
@@ -37,11 +30,10 @@
     margin-bottom: 10px;
 }
 .social{
-    /* border:white 1px solid; */
     color: white;
     height: 150px;
     width: 250px;
-    margin: 100px 80px 10px 300px;
+    margin: 20px 80px 10px 500px;
     justify-content: left;
     text-align: left;
 }
@@ -56,7 +48,7 @@
     width: 35px;
     height: 35px;
     margin-right: 15px;
-    background: linear-gradient(to bottom right, #fd5949,#d6249f,#285AEB);
+    background: linear-gradient(to left, #3A92EE, #5146CA,#6015B2);
     border-radius: 4px;
 }
 .icon{

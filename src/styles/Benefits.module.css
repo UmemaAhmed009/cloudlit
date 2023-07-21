@@ -2,7 +2,9 @@
   margin-top: 20px;
     padding-top: 100px;
     height:620px;
+    font-family: "Open Sans",sans-serif;
 }
+
 .heading{
     justify-content: center;
     align-content: center;
@@ -30,6 +32,8 @@
   }
   .image{
     margin-right: 15px;
+    background-color: white;
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
     }
   .content{
     color: black(129, 131, 125);

@@ -36,7 +36,7 @@ const ChatForm = () => {
         </div>
 
         <div className={styles["form-container"]}>
-            <h1 className={styles.heading1}>Lets Talk About Business</h1>
+            <h1 className={styles.heading1}>Contact Form</h1>
             <form onSubmit={handleSubmit}>
                 <div>
                 <label htmlFor="message">Message:</label>

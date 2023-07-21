@@ -1,11 +1,18 @@
 import React from "react";
 import styles from "../styles/About1.module.css";
-import excellent from "../assets/excellent.png";
+import excellence from "../assets/Execellence.png";
+import innovation from "../assets/Innovation.png";
+import teamwork from "../assets/TeamWork.png";
+import integrity from "../assets/Integrity.png";
+import ethics from "../assets/Ethics.png";
+import compassion from "../assets/Compassion.png";
 
+import picture from "../assets/3rd picture.png";
 const About = () => {
   return (
     <div id="About">
       <div className={styles["about-container"]}>
+        <div className={styles.contentContainer}>
         <div className={styles.content}>
           <h1>
             <span className={styles["content-h1"]}>Solving Together&nbsp;</span>
@@ -13,14 +20,25 @@ const About = () => {
           {/* <h1 className={styles["coloured-content"]}>Custom Software Development </h1>
         <h1 className ={styles["content-h1"]}>&nbsp;Success</h1> */}
           <p className={styles.paragraph}>
-            At Rackspace Technology, we are the multicloud solutions expert. Our
-            technical acumen with the world's leading technologies and muticloud
-            environments-across your applications, data and security - enables
-            you to grow your business, increase efficiency and deliver the
-            future.
+            Businesses are under pressure today to employ cloud technologies to
+            address strategic issues, build new revenue and cut expenses. You
+            can achieve these advantages more quickly by switching to a cloud
+            native strategy. Adoption of cloud native technology is challenging
+            and requires a new way of thinking. This incorporates completely new
+            architectural methodology, new techniques for environment
+            deployment, monitoring, and operation.
+            <br /> Cloudlit Engineering is our core to support our clients in
+            complete cloud transformation journey from start to end!
           </p>
-          {/* <IconButton>Connect now</IconButton> */}
+
         </div>
+        {/* <div className={styles.imageContainer}> */}
+          <div className={styles.image}>
+            <img src={picture} alt=" " />
+          </div>
+        {/* </div> */}
+        </div>
+        
         <div className={styles.section2}>
           <div className={styles["section2-div1"]}>
             <h1>
@@ -84,7 +102,7 @@ const About = () => {
           <div className={styles["box-container"]}>
             <div className={styles.hexagonContainer}>
               <div className={styles.hexagon}>
-                <img src={excellent} style={{ fontSize: "20px" }} />
+                <img src={excellence} style={{ fontSize: "20px" }} />
               </div>
               <h1 style={{ fontSize: "20px" }}>
                 <b>Excellence </b>
@@ -92,7 +110,7 @@ const About = () => {
             </div>
             <div className={styles.hexagonContainer}>
               <div className={styles.hexagon}>
-                <img src={excellent} style={{ fontSize: "20px" }} />
+                <img src={innovation} style={{ fontSize: "20px" }} />
               </div>
               <h1 style={{ fontSize: "20px" }}>
                 <b>Innovation </b>
@@ -100,7 +118,7 @@ const About = () => {
             </div>
             <div className={styles.hexagonContainer}>
               <div className={styles.hexagon}>
-                <img src={excellent} style={{ fontSize: "20px" }} />
+                <img src={teamwork} style={{ fontSize: "20px" }} />
               </div>
               <h1 style={{ fontSize: "20px" }}>
                 <b>Teamwork </b>
@@ -108,7 +126,7 @@ const About = () => {
             </div>
             <div className={styles.hexagonContainer}>
               <div className={styles.hexagon}>
-                <img src={excellent} style={{ fontSize: "20px" }} />
+                <img src={integrity} style={{ fontSize: "20px" }} />
               </div>
               <h1 style={{ fontSize: "20px" }}>
                 <b>Integrity </b>
@@ -116,7 +134,7 @@ const About = () => {
             </div>
             <div className={styles.hexagonContainer}>
               <div className={styles.hexagon}>
-                <img src={excellent} style={{ fontSize: "20px" }} />
+                <img src={ethics} style={{ fontSize: "20px" }} />
               </div>
               <h1 style={{ fontSize: "20px" }}>
                 <b>Ethics </b>
@@ -124,7 +142,7 @@ const About = () => {
             </div>
             <div className={styles.hexagonContainer}>
               <div className={styles.hexagon}>
-                <img src={excellent} style={{ fontSize: "20px" }} />
+                <img src={compassion} style={{ fontSize: "20px" }} />
               </div>
               <h1 style={{ fontSize: "20px" }}>
                 <b>Compassion </b>

@@ -1,10 +1,11 @@
 .ChatForm{
   padding-top: 50px;
   display: flex;
-  height: 800px;
+  /* height: 800px; */
   max-width: 1600px;
   margin-left: 300px;
   margin-right: 300px;
+  font-family: "Open Sans",sans-serif;
   /* flex-direction:row; */
 }
 .staticStyling{
@@ -78,7 +79,7 @@ textarea {
   margin-top: 20px;
   margin-left: 350px;
   padding: 10px;
-  background: linear-gradient(to right,#f4c430, orange);
+  background: linear-gradient(to right,blue, blueviolet);
   color: #fff;
   border: none;
   border-radius: 4px;
