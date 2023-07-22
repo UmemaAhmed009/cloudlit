@@ -10,6 +10,7 @@ import pic6 from '../assets/Reduced Errors.svg'
 import pic7 from '../assets/Increased company performance.svg'
 
 const Benefits = () => {
+  const isMobile = window.innerWidth <= 992;
   return (
     <div id="Benefits">
     <main className={styles["benefits-container"]}>
@@ -17,7 +18,7 @@ const Benefits = () => {
         <h1>Benefits of DevOps Consulting Services</h1>
         <p>Our DevOps consulting team helps you bridge business gaps and develop optimum solutions.</p>
     </div>
-    <div className={styleTwo.container} style={{marginTop:"50px", marginReft:"20px"}}>
+    <div className={styleTwo.container} style={{marginTop:"50px", marginLeft:"20px"}}>
       <div className = {styles["image-content"]}>
         <div className={styles.image}>
             <img
@@ -62,7 +63,9 @@ const Benefits = () => {
             <h1>Automated workflows</h1>
         </div>
         </div>
-        <div className= {styles["image-content"]} style={{marginLeft:"528px"}}>
+        <div className= {styles["image-content"]} 
+        // style={{margin: isMobile ? "0" :"0 38%"}}
+        >
           <div className={styles.image}>
               <img
               src={pic5}

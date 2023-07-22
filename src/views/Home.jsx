@@ -23,10 +23,13 @@ const Home = () => {
 
   return (
     <ThemeProvider theme={theme}>
+      <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+      </head>
       <div id="Home">
         <div className={styles.containerStyle}>
           <div className={styles.contentStyle}>
-            <h3 className={styles.headingOneStyle}></h3>
+            {/* <h3 className={styles.headingOneStyle}></h3> */}
             <h1 className={styles.myheadingTwo}>
               Think. Build. Scale With Cloud
             </h1>

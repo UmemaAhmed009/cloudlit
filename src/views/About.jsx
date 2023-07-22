@@ -11,7 +11,7 @@ import { ThemeProvider } from "@emotion/react";
 
 
 const About = () => {
-  const isMobile = window.innerWidth <= 766; // Adjust the breakpoint as needed
+  const isMobile = window.innerWidth <= 776; // Adjust the breakpoint as needed
 
   const containerStyle = {
     backgroundColor: "white",

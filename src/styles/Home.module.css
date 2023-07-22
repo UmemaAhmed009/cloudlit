@@ -1,6 +1,6 @@
 .containerStyle {
   display: flex;
-  height: 700px; 
+  height: 700px;
   max-width: 1600px;
   /* margin: 0 auto; */
   flex-direction:row;
@@ -29,7 +29,7 @@
   margin-left: 0;
   margin-right:0;
   font-size: 60px ; 
-  padding: 0;
+  padding-top: 20%;
   font-weight: bold;
   line-height: 1;
   background-image: linear-gradient(to left, #3A92EE, #5146CA,#6015B2);
@@ -82,9 +82,23 @@
     height: 100%;
     object-fit: fill;
   }
+
+  @media(max-width: 1300px){
+  .containerStyle{
+    flex-direction: column;
+    height:min-content; 
+  }
+  .imgContainerStyle{
+    width: 50%;
+    align-items: center;
+    justify-items: center;
+    margin: 5% 25%;
+  }
+  }
 /* For mobile device */
   @media(max-width: 768px){
     .containerStyle{
+      height: auto;
       flex-direction: column;
     }
     .headingOneStyle{
