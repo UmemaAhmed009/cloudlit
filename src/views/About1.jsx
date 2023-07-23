@@ -53,7 +53,7 @@ const About = () => {
         <h1 className ={styles["content-h1"]}>&nbsp;Success</h1> */}
             <p
               className={styles.paragraph}
-              style={{ color: "white", width: "500px" }}
+              style={{ color: "white", width: "80%" }}
             >
               Cloudlit is a premier DevOps and IT Consulting Company that offers
               a wide range of services to meet your IT needs. Our experts will
@@ -80,7 +80,7 @@ const About = () => {
         <h1 className ={styles["content-h1"]}>&nbsp;Success</h1> */}
             <p
               className={styles.paragraph}
-              style={{ color: "black", width: "600px" }}
+              style={{ color: "black", width: "90%" }}
             >
               Our goal is to make sure that your applications and infrastructure
               is secure, reliable, and resilient. We enable private and public

@@ -96,6 +96,7 @@ const ChatForm = () => {
             </form>
         </div>
     </div>
+
     );
 };
 
