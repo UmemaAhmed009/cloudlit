@@ -1,4 +1,5 @@
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 500px)
+ {
     #navRes {
       display: none;
     }
@@ -6,9 +7,10 @@
       display: none;
     }
   }
+
   .navFix {
     position: fixed;
-    overflow: hidden;
+    /* overflow: hidden; */
     top: 0;
     z-index: 20;
     width: 100%;
@@ -18,15 +20,56 @@
     background-color: blue;
   }
   .logo{
-    height:75px;
+    height:max-content;
   }
-  @media(min-width:801px){
-    #hamburger{
-      display: none;
-    }
+@media(min-width:1232px){
+  .navFix .Hamburger{
+    display: none;
   }
+}
+
+/* Add this media query to target screens with width less than 1232px */
+@media (max-width: 1232px) {
+  /* .navFix {
+    padding: 0 10px ;
+  } */
+
+  /* Hide the items in the navbar when screen size is less than 1232px */
+  .navFix .btnRes,
+  .navFix #contactBtn {
+    display: none;
+  }
+
+  /* Show the hamburger icon when screen size is less than 1232px */
+  .navFix .Hamburger {
+    display: flex;
+  }
+
+  /* Hide the navigation menu when screen size is less than 1232px */
+  /* .navFix #myDIV {
+    display: block;
+  } */
+
+  /* Optionally, adjust the layout for the mobile menu */
+  .navFix .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    padding: 10px;
+  }
+
+  /* Optionally, style the mobile menu links */
+  .navFix .mobile-menu a {
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 5px;
+  }
+}
+
   @media (max-width:800px) {
-    #resumeBtn{
+    #contactBtn{
       display: none;
     }
   }
