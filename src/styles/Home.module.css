@@ -27,7 +27,7 @@
   text-align: left;
   margin-top: 10px;
   margin-left: 0;
-  margin-right:0;
+  margin-right:5%;
   font-size: 60px ; 
   padding-top: 20%;
   font-weight: bold;
@@ -89,11 +89,15 @@
     height:min-content; 
   }
   .imgContainerStyle{
-    width: 50%;
+    width: 70%;
     align-items: center;
     justify-items: center;
     margin: 5% 25%;
   }
+  .paragraghStyle {
+    text-align: "center";
+    margin-right:5%; 
+}
   }
 /* For mobile device */
   @media(max-width: 768px){
@@ -109,8 +113,4 @@
       text-align: center;
       margin-right:100px;
     }
-    .paragraghStyle {
-      text-align: "center";
-      margin-right:100px 
-  }
 }

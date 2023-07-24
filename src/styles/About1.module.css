@@ -83,12 +83,13 @@
 .section2-div2{
     display: flex;
     flex-direction: column;
-    /* height: auto; */
+    /* height: max-content;  */
     position:relative;
     /* margin-top: 20px;
     margin-right: 100px; */
     padding-left: 12%; 
     padding-right: 2%; 
+    padding-bottom: 2%;
     text-align: left;
     background-color: #E5E4E2;
     width:60%;
@@ -99,7 +100,7 @@
 } 
 .section3{
     /* border: 1px solid black;  */
-    height: auto;
+    
     margin: 5%;
     /* margin: 100px 100px; */
     word-wrap: break-word;
@@ -171,8 +172,11 @@
       margin: 1% 1%;
       padding-left: 50px;
       clip-path: none;
-      height:298px;
+      min-height:298px;
       width: 100%;
+    }
+    .box-container{
+      padding-left: 10%;
     }
   }
   /* @media(max-width:600px){
