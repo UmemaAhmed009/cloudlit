@@ -33,9 +33,21 @@
     /* height: 30px; */
   }
   .image{
+    padding:5px;
+    /* padding-left:5px; */
+    height: 80px;
+    min-width: 80px;
+    width: auto;
+    /* height:auto; */
+    /* border: 1px solid black; */
     margin-right: 15px;
     background-color: white;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    }
+    .image img{
+      background-color: white;
+      width:100%;
+      height:100%;
     }
   .content{
     color: black(129, 131, 125);

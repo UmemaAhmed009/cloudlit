@@ -5,6 +5,7 @@ import { Button, createTheme } from "@mui/material";
 import { ThemeProvider } from "@emotion/react";
 import devOps from "../assets/2nd picture.png";
 import { green } from "@mui/material/colors";
+import { Link, useNavigate } from "react-router-dom";
 
 const Home = () => {
   const buttonStyle = {
@@ -19,7 +20,13 @@ const Home = () => {
     },
   };
 
+  const navigate = useNavigate();
   const theme = createTheme(); // Create an empty theme object
+
+  const onDiscoverButtonClick = () => {
+    navigate("/about");
+    //window.open('/contact');
+  };
 
   return (
     <ThemeProvider theme={theme}>
@@ -40,7 +47,8 @@ const Home = () => {
               traditional environments, streamline your operating models and
               operate efficiently.
             </p>
-            <Button variant="contained" color="primary" style={buttonStyle}>
+            <Button variant="contained" color="primary" style={buttonStyle}
+            onClick={onDiscoverButtonClick}>
               Discover More
             </Button>
             {/* <ColorButton variant="contained">Custom CSS</ColorButton> */}

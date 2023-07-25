@@ -1,11 +1,12 @@
 import * as React from "react";
 import styles from '../styles/Benefits.module.css'
 import styleTwo from '../styles/Services.module.css'
-import pic1 from '../assets/3.png'
-import pic2 from '../assets/4.png'
-import pic3 from '../assets/6.png'
-import pic4 from '../assets/5.png'
-import pic5 from '../assets/2.png'
+import pic1 from '../assets/icons/1.1.png'
+import pic2 from '../assets/icons/3.1.png'
+// import pic3 from '../assets/6.png'
+import pic3 from '../assets/icons/5.1.png'
+import pic4 from '../assets/icons/4.1.png'
+import pic5 from '../assets/icons/2.1.png'
 import pic6 from '../assets/Reduced Errors.svg'
 import pic7 from '../assets/Increased company performance.svg'
 

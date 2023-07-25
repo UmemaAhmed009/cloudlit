@@ -2,6 +2,7 @@
   display: flex;
   height: 700px;
   max-width: 1600px;
+  z-index: 999;
   /* margin: 0 auto; */
   flex-direction:row;
   background-color: #F4F7FA;

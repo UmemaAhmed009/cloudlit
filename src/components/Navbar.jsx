@@ -22,6 +22,8 @@ import useMediaQuery from "@mui/material/useMediaQuery";
 import React, { useState } from "react";
 import "../styles/Navbar.css";
 import logo from "../assets/white1.png";
+import logo1 from "../assets/white.png"
+import logo2 from "../assets/white2.png"
 
 export default function Navbar() {
   const { colorMode, toggleColorMode } = useColorMode();
@@ -68,7 +70,7 @@ export default function Navbar() {
         <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
           <div className="logo">
             <img
-              src={logo} // Replace with the URL of your image
+              src={logo2} // Replace with the URL of your image
               alt="logo"
             />
           </div>
