@@ -19,7 +19,7 @@ const Benefits = () => {
         <h1>Benefits of DevOps Consulting Services</h1>
         <p>Our DevOps consulting team helps you bridge business gaps and develop optimum solutions.</p>
     </div>
-    <div className={styleTwo.container} style={{marginTop:"50px", marginLeft:"20px"}}>
+    <div className={styleTwo.container} style={{justifyContent:"center", alignItems:"center", marginTop:"50px"}}>
       <div className = {styles["image-content"]}>
         <div className={styles.image}>
             <img
