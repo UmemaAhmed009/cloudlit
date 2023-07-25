@@ -69,10 +69,12 @@ export default function Navbar() {
       >
         <Flex h={20} alignItems={"center"} justifyContent={"space-between"}>
           <div className="logo">
+            <a href="/home">
             <img
               src={logo2} // Replace with the URL of your image
               alt="logo"
             />
+            </a>
           </div>
           <HStack w="42%"></HStack>
           <Flex h={16} alignItems={"center"} justifyContent={"space-between"}>
