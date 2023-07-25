@@ -30,26 +30,42 @@ const Contact = () => {
           </h1>
           <div className={styles.iconContainer}>
             <div className={styles.smallBox}>
-              <a href="https://m.facebook.com/cloudlit.official" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
+              <a
+                href="https://facebook.com/cloudlit.official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faFacebook} className={styles.icon} />
               </a>
             </div>
             <div className={styles.smallBox}>
-              <a href="https://twitter.com/thecloudlit" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
+              <a
+                href="https://twitter.com/thecloudlit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faTwitter} className={styles.icon} />
               </a>
             </div>
             <div className={styles.smallBox}>
-              <a href="https://instagram.com/cloudlit_official" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon
-                icon={faSquareInstagram}
-                className={styles.icon}
-              />
+              <a
+                href="https://instagram.com/cloudlit_official"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon
+                  icon={faSquareInstagram}
+                  className={styles.icon}
+                />
               </a>
             </div>
             <div className={styles.smallBox}>
-              <a href="https://www.linkedin.com/mwlite/company/cloudlitofficial" target="_blank" rel="noopener noreferrer">
-              <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
+              <a
+                href="https://www.linkedin.com/mwlite/company/cloudlitofficial"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <FontAwesomeIcon icon={faLinkedin} className={styles.icon} />
               </a>
             </div>
           </div>
